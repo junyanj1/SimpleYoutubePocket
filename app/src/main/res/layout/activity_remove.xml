@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="52dp"
+        android:clickable="true"
+        android:onClick="goHome"
+        app:layout_constraintEnd_toStartOf="@+id/RemoveButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RemoveQuery"
+        app:srcCompat="?android:attr/homeAsUpIndicator" />
+
+    <Button
+        android:id="@+id/RemoveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="105dp"
+        android:onClick="removeRecord"
+        android:text="Remove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RemoveQuery" />
+
+    <EditText
+        android:id="@+id/RemoveQuery"
+        android:layout_width="231dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="76dp"
+        android:ems="10"
+        android:hint="Youtuber to be removed"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/RemovalList"
+        android:layout_width="368dp"
+        android:layout_height="314dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton5" />
+</android.support.constraint.ConstraintLayout>
